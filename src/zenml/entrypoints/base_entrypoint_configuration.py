@@ -263,7 +263,7 @@ class BaseEntrypointConfiguration(ABC):
             code_reference: The reference to the code.
         """
         logger.info(
-            "Downloading code from code repository `%s` (commit `%s`).",
+            "Downloading (my messsssage here) code from code repository `%s` (commit `%s`).",
             code_reference.code_repository.name,
             code_reference.commit,
         )
