@@ -125,6 +125,7 @@ class GitLabCodeRepository(BaseCodeRepository):
             directory: The directory to download to.
             repo_sub_directory: The sub directory to download from.
         """
+        logger.warning("In gitlab code repository - running with iterator=True")
         contents = self.gitlab_project.repository_tree(
             ref=commit,
             path=repo_sub_directory or "",
